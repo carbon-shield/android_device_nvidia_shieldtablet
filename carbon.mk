@@ -6,7 +6,7 @@ TARGET_SCREEN_WIDTH := 1200
 $(call inherit-product, device/nvidia/shieldtablet/full_shieldtablet.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_tablet.mk)
+$(call inherit-product, vendor/carbon/config/common_tablet.mk)
 
 PRODUCT_NAME := carbon_shieldtablet
 PRODUCT_DEVICE := shieldtablet
