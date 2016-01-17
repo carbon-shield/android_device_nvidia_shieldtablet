@@ -50,13 +50,13 @@ TARGET_POWERHAL_VARIANT := tegra
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
-# Remove if/when M libs are released
-TARGET_TINY_ALSA_IGNORE_SILENCE_SIZE := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/nvidia/shieldtablet/bluetooth
+# At least when debugging is enabled, we have the same crash as manta
+BCM_BLUETOOTH_MANTA_BUG := true
 
 # Graphics
 USE_OPENGL_RENDERER := true
@@ -91,7 +91,10 @@ WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 BOARD_HARDWARE_CLASS := device/nvidia/shieldtablet/cmhw/
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy
+BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy/common \
+                       device/nvidia/shieldtablet/sepolicy/icera \
+                       device/nvidia/shieldtablet/sepolicy/product \
+                       device/nvidia/shieldtablet/sepolicy/raydium
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
