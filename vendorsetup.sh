@@ -1,0 +1,2 @@
+add_lunch_combo carbon_shieldtablet-eng
+add_lunch_combo carbon_shieldtablet-userdebug
