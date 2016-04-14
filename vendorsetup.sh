@@ -1,2 +1,2 @@
-add_lunch_combo carbon_shieldtablet-eng
-add_lunch_combo carbon_shieldtablet-userdebug
+add_lunch_combo xosp_shieldtablet-eng
+add_lunch_combo xosp_shieldtablet-userdebug
