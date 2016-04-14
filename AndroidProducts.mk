@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_shieldtablet.mk \
-    $(LOCAL_DIR)/reborn.mk
+    $(LOCAL_DIR)/xosp.mk
