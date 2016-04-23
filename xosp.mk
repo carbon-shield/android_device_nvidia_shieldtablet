@@ -6,6 +6,7 @@ $(call inherit-product, device/nvidia/shieldtablet/full_shieldtablet.mk)
 
 # Inherit some common XOSP stuff.
 $(call inherit-product, vendor/xosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xosp/config/xosp.mk)
 
 PRODUCT_NAME := xosp_shieldtablet
 PRODUCT_DEVICE := shieldtablet
